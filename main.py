@@ -18,7 +18,7 @@ with open("cars.csv") as CSV_file:
         i += 1
 
 #Basic Get Car data by CAR_ID. CAR_ID ranges from 0-len(data)
-def get_car(car_id):
+def get_car(car_id) -> None:
     if car_id in data:
         return data[car_id]
     else:
