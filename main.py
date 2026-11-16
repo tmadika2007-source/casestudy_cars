@@ -23,3 +23,16 @@ def get_car(car_id):
         return data[car_id]
     else:
         return None
+
+print(get_car(4))
+
+
+
+def get_brands():
+    car_brands = []
+    for brand in data:
+        if data[brand]["Identification.Make"] not in car_brands:
+            car_brands.append(data[brand]["Identification.Make"])
+    return car_brands
+
+print(get_brands())
